@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0043)https://smarteducraft.github.io/smartclass/ -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>우리 반 스마트 대시보드</title>
     <!-- Tailwind CSS -->
@@ -34,24 +34,33 @@
         .custom-scrollbar::-webkit-scrollbar { width: 6px; }
         .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.1); border-radius: 10px; }
         
-        .editable-input {
+                .editable-input {
             background: transparent;
             border: none;
             outline: none;
             width: 100%;
             padding: 2px 0;
+            font-family: inherit; 
         }
+        
+        textarea.editable-input {
+            resize: none; 
+            overflow-y: hidden; 
+            line-height: 1.2; 
+            display: block;
+        }
+
         .editable-input:focus {
             background: rgba(255,255,255,0.5);
             border-radius: 4px;
         }
         #notice-textarea {
             background: transparent; border: none; outline: none; resize: none;
-            width: 100%; height: 100%; font-size: 2.2rem; line-height: 1.6;
+            width: 100%; height: 100%; font-size: 3rem; line-height: 1.3;
             color: #334155; font-weight: 800;
         }
     </style>
-</head>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.relative{position:relative}.inset-0{inset:0px}.z-10{z-index:10}.z-50{z-index:50}.my-8{margin-top:2rem;margin-bottom:2rem}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-8{margin-bottom:2rem}.ml-4{margin-left:1rem}.mt-12{margin-top:3rem}.mt-1{margin-top:0.25rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-4{height:1rem}.h-5{height:1.25rem}.h-8{height:2rem}.h-full{height:100%}.h-screen{height:100vh}.w-4{width:1rem}.w-5{width:1.25rem}.w-8{width:2rem}.w-\[38\%\]{width:38%}.w-\[62\%\]{width:62%}.w-full{width:100%}.min-w-\[200px\]{min-width:200px}.max-w-3xl{max-width:48rem}.max-w-full{max-width:100%}.flex-1{flex:1 1 0%}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.items-baseline{align-items:baseline}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-0{gap:0px}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-10 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2.5rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.overflow-y-auto{overflow-y:auto}.text-nowrap{text-wrap:nowrap}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-\[2\.5rem\]{border-radius:2.5rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.rounded-\[2rem\]{border-radius:2rem}.rounded-\[3rem\]{border-radius:3rem}.border{border-width:1px}.border-4{border-width:4px}.border-b{border-bottom-width:1px}.border-dashed{border-style:dashed}.border-blue-100{--tw-border-opacity:1;border-color:rgb(219 234 254 / var(--tw-border-opacity, 1))}.border-orange-100{--tw-border-opacity:1;border-color:rgb(255 237 213 / var(--tw-border-opacity, 1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-white\/40{border-color:rgb(255 255 255 / 0.4)}.border-white\/50{border-color:rgb(255 255 255 / 0.5)}.bg-black\/60{background-color:rgb(0 0 0 / 0.6)}.bg-blue-50{--tw-bg-opacity:1;background-color:rgb(239 246 255 / var(--tw-bg-opacity, 1))}.bg-orange-50{--tw-bg-opacity:1;background-color:rgb(255 247 237 / var(--tw-bg-opacity, 1))}.bg-orange-500{--tw-bg-opacity:1;background-color:rgb(249 115 22 / var(--tw-bg-opacity, 1))}.bg-red-50{--tw-bg-opacity:1;background-color:rgb(254 242 242 / var(--tw-bg-opacity, 1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/30{background-color:rgb(255 255 255 / 0.3)}.bg-white\/40{background-color:rgb(255 255 255 / 0.4)}.bg-white\/60{background-color:rgb(255 255 255 / 0.6)}.p-1{padding:0.25rem}.p-10{padding:2.5rem}.p-2{padding:0.5rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-8{padding-left:2rem;padding-right:2rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.pb-1{padding-bottom:0.25rem}.pb-6{padding-bottom:1.5rem}.pl-6{padding-left:1.5rem}.pr-2{padding-right:0.5rem}.pr-4{padding-right:1rem}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-6xl{font-size:3.75rem;line-height:1}.text-\[10rem\]{font-size:10rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.uppercase{text-transform:uppercase}.leading-none{line-height:1}.tracking-tight{letter-spacing:-0.025em}.tracking-tighter{letter-spacing:-0.05em}.tracking-widest{letter-spacing:0.1em}.text-blue-500{--tw-text-opacity:1;color:rgb(59 130 246 / var(--tw-text-opacity, 1))}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}.text-green-500{--tw-text-opacity:1;color:rgb(34 197 94 / var(--tw-text-opacity, 1))}.text-orange-500{--tw-text-opacity:1;color:rgb(249 115 22 / var(--tw-text-opacity, 1))}.text-orange-600{--tw-text-opacity:1;color:rgb(234 88 12 / var(--tw-text-opacity, 1))}.text-orange-700{--tw-text-opacity:1;color:rgb(194 65 12 / var(--tw-text-opacity, 1))}.text-red-500{--tw-text-opacity:1;color:rgb(239 68 68 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-red-400{--tw-text-opacity:1;color:rgb(248 113 113 / var(--tw-text-opacity, 1))}.text-white\/60{color:rgb(255 255 255 / 0.6)}.opacity-0{opacity:0}.opacity-50{opacity:0.5}.opacity-70{opacity:0.7}.opacity-90{opacity:0.9}.opacity-20{opacity:0.2}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.outline-none{outline:2px solid transparent;outline-offset:2px}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.hover\:bg-orange-600:hover{--tw-bg-opacity:1;background-color:rgb(234 88 12 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-100:hover{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-200:hover{--tw-bg-opacity:1;background-color:rgb(226 232 240 / var(--tw-bg-opacity, 1))}.hover\:bg-white\/70:hover{background-color:rgb(255 255 255 / 0.7)}.hover\:bg-white\/20:hover{background-color:rgb(255 255 255 / 0.2)}.hover\:bg-white\/60:hover{background-color:rgb(255 255 255 / 0.6)}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-blue-400:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(96 165 250 / var(--tw-ring-opacity, 1))}.focus\:ring-orange-400:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(251 146 60 / var(--tw-ring-opacity, 1))}.active\:scale-\[0\.98\]:active{--tw-scale-x:0.98;--tw-scale-y:0.98;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:opacity-100{opacity:1}@media (min-width: 640px){.sm\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}</style></head>
 <body class="bg-default text-slate-800 h-screen flex items-center justify-center p-6">
     <div id="bg-container" class="bg-default"></div>
 
@@ -59,28 +68,26 @@
         <!-- 좌측 영역 -->
         <section class="w-[38%] flex flex-col justify-between py-10 pl-6 pr-4 left-content-shadow text-shadow-lg">
             <div class="space-y-2">
-                <div id="date-display" class="text-3xl font-bold tracking-tight text-slate-700 opacity-90">2026. 02. 28</div>
-                <div id="day-display" class="text-6xl font-black text-orange-500 text-shadow-strong">토요일</div>
+                <div id="date-display" class="text-3xl font-bold tracking-tight text-slate-700 opacity-90">2026. 03. 30</div>
+                <div id="day-display" class="text-6xl font-black text-orange-500 text-shadow-strong">월요일</div>
             </div>
 
             <div class="flex flex-col gap-0">
                 <div class="flex flex-col items-start">
-                    <span id="ampm-display" class="text-4xl font-bold text-blue-500 mb-2">오전</span>
+                    <span id="ampm-display" class="text-4xl font-bold text-blue-500 mb-2">오후</span>
                     <div class="flex items-baseline">
-                        <span id="time-display" class="text-[10rem] font-black leading-none tracking-tighter text-slate-800 text-shadow-strong">07:35</span>
+                        <span id="time-display" class="text-[10rem] font-black leading-none tracking-tighter text-slate-800 text-shadow-strong">05:37</span>
                         <span class="text-4xl font-bold opacity-50 ml-4">
-                            : <span id="sec-display">28</span>
+                            : <span id="sec-display">56</span>
                         </span>
                     </div>
                 </div>
             </div>
 
             <div class="space-y-3 flex flex-col items-start">
-                <div id="status-badge" class="glass inline-block px-8 py-4 rounded-3xl text-3xl font-black shadow-xl border-white/50 mb-2">아침자습</div>
+                <div id="status-badge" class="glass inline-block px-8 py-4 rounded-3xl text-3xl font-black shadow-xl border-white/50 mb-2 text-blue-600">방과후 시간</div>
                 <!-- D-Day 리스트 영역 -->
-                <div id="dday-container" class="flex flex-wrap gap-2 max-w-full">
-                    <!-- D-Day 항목들이 여기에 생성됨 -->
-                </div>
+                <div id="dday-container" class="flex flex-wrap gap-2 max-w-full"><div class="bg-white/60 backdrop-blur-sm px-4 py-2 rounded-2xl border border-white/40 shadow-sm text-lg font-bold text-slate-700">여름방학 D-116</div></div>
             </div>
         </section>
 
@@ -89,55 +96,60 @@
             <div class="flex justify-between items-end mb-8">
                 <div class="flex items-end gap-6">
                     <div>
-                        <h2 id="right-title" class="text-5xl font-black text-orange-600 mb-1 text-shadow-lg text-nowrap">우리 반 약속</h2>
-                        <p id="right-subtitle" class="text-lg font-bold tracking-widest text-slate-500 opacity-70 uppercase">Class Rules</p>
+                        <h2 id="right-title" class="text-5xl font-black text-orange-600 mb-1 text-shadow-lg text-nowrap">공지사항</h2>
+                        <p id="right-subtitle" class="text-lg font-bold tracking-widest text-slate-500 opacity-70 uppercase">Announcements</p>
                     </div>
                     <!-- 탭 전환 버튼 영역 -->
                     <div class="flex bg-white/30 p-1 rounded-xl backdrop-blur-sm border border-white/40 mb-1">
-                        <button onclick="toggleView('rules')" id="btn-view-rules" class="px-5 py-2.5 rounded-lg font-bold transition-all text-sm">약속</button>
-                        <button onclick="toggleView('notice')" id="btn-view-notice" class="px-5 py-2.5 rounded-lg font-bold transition-all text-sm">알림장</button>
-                        <button onclick="toggleView('announcements')" id="btn-view-announcements" class="px-5 py-2.5 rounded-lg font-bold transition-all text-sm text-nowrap">공지사항</button>
+                        <button onclick="toggleView(&#39;rules&#39;)" id="btn-view-rules" class="px-5 py-2.5 rounded-lg font-bold transition-all text-sm text-slate-500 hover:bg-white/60">약속</button>
+                        <button onclick="toggleView(&#39;notice&#39;)" id="btn-view-notice" class="px-5 py-2.5 rounded-lg font-bold transition-all text-sm text-slate-500 hover:bg-white/60">알림장</button>
+                        <button onclick="toggleView(&#39;announcements&#39;)" id="btn-view-announcements" class="px-5 py-2.5 rounded-lg font-black transition-all text-sm bg-orange-500 text-white shadow-lg">공지사항</button>
                     </div>
                 </div>
                 <!-- 우측 상단 기능 버튼 영역 -->
                 <div class="flex items-end gap-2 pb-1">
                     <div id="auto-save-indicator" class="flex items-center gap-2 px-4 py-2.5 text-slate-400 font-bold transition-all opacity-0">
-                        <i data-lucide="check-circle-2" class="w-4 h-4 text-green-500"></i> 자동 저장됨
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check-circle-2" aria-hidden="true" class="lucide lucide-check-circle-2 w-4 h-4 text-green-500"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg> 자동 저장됨
                     </div>
                     <button onclick="openSettings()" class="p-3 bg-white/40 backdrop-blur-md rounded-full hover:bg-white/70 transition-all shadow-lg">
-                        <i data-lucide="settings" class="w-8 h-8 text-slate-700"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="settings" aria-hidden="true" class="lucide lucide-settings w-8 h-8 text-slate-700"><path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path><circle cx="12" cy="12" r="3"></circle></svg>
                     </button>
                 </div>
             </div>
 
             <!-- 내용 컨테이너 -->
-            <div id="content-display-area" class="flex-1 overflow-y-auto pr-2 custom-scrollbar"></div>
+            <div id="content-display-area" class="flex-1 overflow-y-auto pr-2 custom-scrollbar"><div class="space-y-4">
+                        <div class="glass p-6 rounded-[2rem] shadow-lg flex items-center gap-6 border-white/40 group card-anim">
+                            <span class="text-4xl font-black text-green-500 opacity-20">01</span>
+                            <div class="flex-1">
+                                <input type="text" value="" oninput="config[&#39;announcements&#39;][0].title = this.value; saveToLocal(); showAutoSaveIndicator();" class="editable-input text-2xl font-black text-slate-800" placeholder="제목">
+                                <input type="text" value="" oninput="config[&#39;announcements&#39;][0].desc = this.value; saveToLocal(); showAutoSaveIndicator();" class="editable-input text-lg text-slate-500 font-bold mt-1" placeholder="내용">
+                            </div>
+                            <button onclick="config[&#39;announcements&#39;].splice(0, 1); renderContent(); saveToLocal(); showAutoSaveIndicator();" class="p-2 text-red-400 opacity-0 group-hover:opacity-100 transition-all"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="trash-2" aria-hidden="true" class="lucide lucide-trash-2"><path d="M10 11v6"></path><path d="M14 11v6"></path><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path><path d="M3 6h18"></path><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></button>
+                        </div><button onclick="config[&#39;announcements&#39;].push({title:&#39;&#39;, desc:&#39;&#39;}); renderContent(); saveToLocal(); showAutoSaveIndicator();" class="w-full py-5 border-4 border-dashed border-white/40 rounded-[2rem] text-white/60 font-black hover:bg-white/20 transition-all flex items-center justify-center gap-2">+ 추가하기</button></div></div>
             
             <div class="h-8"></div>
         </section>
     </main>
 
     <!-- 설정 모달 -->
-    <div id="settings-modal" 
-         class="fixed inset-0 bg-black/60 hidden items-start justify-center z-50 p-4 backdrop-blur-sm overflow-y-auto"
-         onclick="handleOutsideClick(event)">
-        <div class="bg-white rounded-[2.5rem] w-full max-w-3xl my-8 p-10 shadow-2xl relative" 
-             onclick="event.stopPropagation()">
+    <div id="settings-modal" class="fixed inset-0 bg-black/60 hidden items-start justify-center z-50 p-4 backdrop-blur-sm overflow-y-auto" onclick="handleOutsideClick(event)">
+        <div class="bg-white rounded-[2.5rem] w-full max-w-3xl my-8 p-10 shadow-2xl relative" onclick="event.stopPropagation()">
             <div class="flex justify-between items-center mb-8 border-b pb-6">
                 <div class="flex items-center gap-3">
-                    <i data-lucide="sliders" class="text-orange-500 w-8 h-8"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="sliders" aria-hidden="true" class="lucide lucide-sliders text-orange-500 w-8 h-8"><path d="M10 8h4"></path><path d="M12 21v-9"></path><path d="M12 8V3"></path><path d="M17 16h4"></path><path d="M19 12V3"></path><path d="M19 21v-5"></path><path d="M3 14h4"></path><path d="M5 10V3"></path><path d="M5 21v-7"></path></svg>
                     <h3 class="text-3xl font-black text-slate-800">대시보드 환경 설정</h3>
                 </div>
-                <button onclick="closeSettings()" class="p-2 hover:bg-slate-100 rounded-full text-slate-400 transition-colors"><i data-lucide="x" class="w-8 h-8"></i></button>
+                <button onclick="closeSettings()" class="p-2 hover:bg-slate-100 rounded-full text-slate-400 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" aria-hidden="true" class="lucide lucide-x w-8 h-8"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button>
             </div>
 
             <div class="space-y-10">
                 <!-- 배경 설정 -->
                 <div class="space-y-3">
-                    <h4 class="font-bold text-lg flex items-center gap-2 text-slate-700"><i data-lucide="image" class="w-5 h-5"></i> 배경 이미지</h4>
+                    <h4 class="font-bold text-lg flex items-center gap-2 text-slate-700"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="image" aria-hidden="true" class="lucide lucide-image w-5 h-5"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg> 배경 이미지</h4>
                     <div class="flex gap-2">
                         <input type="text" id="bg-url-input" placeholder="이미지 주소(URL)" class="flex-1 p-3 border rounded-xl text-sm focus:ring-2 focus:ring-orange-400 outline-none">
-                        <button onclick="document.getElementById('bg-file-input').click()" class="px-4 bg-slate-100 hover:bg-slate-200 rounded-xl font-bold text-sm">파일</button>
+                        <button onclick="document.getElementById(&#39;bg-file-input&#39;).click()" class="px-4 bg-slate-100 hover:bg-slate-200 rounded-xl font-bold text-sm">파일</button>
                         <button onclick="resetBackground()" class="px-4 bg-red-50 text-red-500 rounded-xl font-bold text-sm">초기화</button>
                         <input type="file" id="bg-file-input" accept="image/*" class="hidden">
                     </div>
@@ -146,39 +158,39 @@
                 <!-- D-Day 관리 -->
                 <div class="space-y-4">
                     <div class="flex justify-between items-center">
-                        <h4 class="font-bold text-lg flex items-center gap-2 text-slate-700"><i data-lucide="calendar-check" class="w-5 h-5"></i> D-Day 관리</h4>
-                        <button onclick="addRow('dday-editor')" class="px-3 py-1 bg-blue-50 text-blue-600 rounded-lg text-sm font-bold border border-blue-100">+ 일정 추가</button>
+                        <h4 class="font-bold text-lg flex items-center gap-2 text-slate-700"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="calendar-check" aria-hidden="true" class="lucide lucide-calendar-check w-5 h-5"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="m9 16 2 2 4-4"></path></svg> D-Day 관리</h4>
+                        <button onclick="addRow(&#39;dday-editor&#39;)" class="px-3 py-1 bg-blue-50 text-blue-600 rounded-lg text-sm font-bold border border-blue-100">+ 일정 추가</button>
                     </div>
                     <div id="dday-editor" class="space-y-3"></div>
                 </div>
 
                 <!-- 요일별 시수 설정 -->
                 <div class="space-y-4 bg-orange-50 p-6 rounded-3xl border border-orange-100">
-                    <h4 class="font-bold text-lg flex items-center gap-2 text-orange-700"><i data-lucide="layout-list" class="w-5 h-5"></i> 요일별 수업 시수 설정</h4>
+                    <h4 class="font-bold text-lg flex items-center gap-2 text-orange-700"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="layout-list" aria-hidden="true" class="lucide lucide-layout-list w-5 h-5"><rect width="7" height="7" x="3" y="3" rx="1"></rect><rect width="7" height="7" x="3" y="14" rx="1"></rect><path d="M14 4h7"></path><path d="M14 9h7"></path><path d="M14 15h7"></path><path d="M14 20h7"></path></svg> 요일별 수업 시수 설정</h4>
                     <div class="grid grid-cols-5 gap-3">
-                        <div class="text-center space-y-1"><span class="text-xs font-black text-slate-400">월</span><select id="period-mon" class="w-full p-2 border rounded-xl font-bold text-center"></select></div>
-                        <div class="text-center space-y-1"><span class="text-xs font-black text-slate-400">화</span><select id="period-tue" class="w-full p-2 border rounded-xl font-bold text-center"></select></div>
-                        <div class="text-center space-y-1"><span class="text-xs font-black text-slate-400 text-blue-500">수</span><select id="period-wed" class="w-full p-2 border rounded-xl font-bold text-center text-blue-600"></select></div>
-                        <div class="text-center space-y-1"><span class="text-xs font-black text-slate-400">목</span><select id="period-thu" class="w-full p-2 border rounded-xl font-bold text-center"></select></div>
-                        <div class="text-center space-y-1"><span class="text-xs font-black text-slate-400">금</span><select id="period-fri" class="w-full p-2 border rounded-xl font-bold text-center"></select></div>
+                        <div class="text-center space-y-1"><span class="text-xs font-black text-slate-400">월</span><select id="period-mon" class="w-full p-2 border rounded-xl font-bold text-center"><option value="4">4교시</option><option value="5" selected="">5교시</option><option value="6">6교시</option></select></div>
+                        <div class="text-center space-y-1"><span class="text-xs font-black text-slate-400">화</span><select id="period-tue" class="w-full p-2 border rounded-xl font-bold text-center"><option value="4">4교시</option><option value="5">5교시</option><option value="6" selected="">6교시</option></select></div>
+                        <div class="text-center space-y-1"><span class="text-xs font-black text-slate-400 text-blue-500">수</span><select id="period-wed" class="w-full p-2 border rounded-xl font-bold text-center text-blue-600"><option value="4">4교시</option><option value="5" selected="">5교시</option><option value="6">6교시</option></select></div>
+                        <div class="text-center space-y-1"><span class="text-xs font-black text-slate-400">목</span><select id="period-thu" class="w-full p-2 border rounded-xl font-bold text-center"><option value="4">4교시</option><option value="5" selected="">5교시</option><option value="6">6교시</option></select></div>
+                        <div class="text-center space-y-1"><span class="text-xs font-black text-slate-400">금</span><select id="period-fri" class="w-full p-2 border rounded-xl font-bold text-center"><option value="4">4교시</option><option value="5" selected="">5교시</option><option value="6">6교시</option></select></div>
                     </div>
                 </div>
 
                 <!-- 시정표 상세 설정 -->
                 <div class="space-y-4">
-                    <h4 class="font-bold text-lg flex items-center gap-2 text-slate-700"><i data-lucide="clock" class="w-5 h-5"></i> 시정표 설정</h4>
+                    <h4 class="font-bold text-lg flex items-center gap-2 text-slate-700"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="clock" aria-hidden="true" class="lucide lucide-clock w-5 h-5"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg> 시정표 설정</h4>
                     <div class="flex flex-wrap gap-4 bg-slate-50 p-6 rounded-2xl border border-slate-200">
                         <div class="flex-1 min-w-[200px]">
                             <label class="text-xs font-bold text-slate-400 mb-1 block">1교시 시작 시간</label>
-                            <input type="time" id="start-time-trigger" class="w-full p-3 border rounded-xl font-black text-lg focus:ring-2 focus:ring-orange-400 outline-none" onchange="autoCalculateSchedule(this.value, document.getElementById('lunch-after-input').value)">
+                            <input type="time" id="start-time-trigger" class="w-full p-3 border rounded-xl font-black text-lg focus:ring-2 focus:ring-orange-400 outline-none" onchange="autoCalculateSchedule(this.value, document.getElementById(&#39;lunch-after-input&#39;).value)">
                         </div>
                         <div class="flex-1 min-w-[200px]">
                             <label class="text-xs font-bold text-slate-400 mb-1 block text-blue-500">점심시간 위치 설정</label>
-                            <select id="lunch-after-input" class="w-full p-3 border rounded-xl font-black text-lg focus:ring-2 focus:ring-blue-400 outline-none" onchange="autoCalculateSchedule(document.getElementById('start-time-trigger').value, this.value)">
+                            <select id="lunch-after-input" class="w-full p-3 border rounded-xl font-black text-lg focus:ring-2 focus:ring-blue-400 outline-none" onchange="autoCalculateSchedule(document.getElementById(&#39;start-time-trigger&#39;).value, this.value)">
                                 <option value="1">1교시 후 점심</option>
                                 <option value="2">2교시 후 점심</option>
                                 <option value="3">3교시 후 점심</option>
-                                <option value="4" selected>4교시 후 점심</option>
+                                <option value="4" selected="">4교시 후 점심</option>
                                 <option value="5">5교시 후 점심</option>
                             </select>
                         </div>
@@ -426,15 +438,16 @@
                 let html = `<div class="space-y-4">`;
                 config[type].forEach((item, idx) => {
                     html += `
-                        <div class="glass p-6 rounded-[2rem] shadow-lg flex items-center gap-6 border-white/40 group card-anim">
-                            <span class="text-4xl font-black ${type === 'rules' ? 'text-blue-500' : 'text-green-500'} opacity-20">${String(idx + 1).padStart(2, '0')}</span>
+                        <div class="glass p-6 rounded-[2rem] shadow-lg flex items-start gap-6 border-white/40 group card-anim">
+                            <span class="text-4xl font-black ${type === 'rules' ? 'text-blue-500' : 'text-green-500'} opacity-20 mt-2">${String(idx + 1).padStart(2, '0')}</span>
                             <div class="flex-1">
-                                <input type="text" value="${item.title}" oninput="config['${type}'][${idx}].title = this.value; saveToLocal(); showAutoSaveIndicator();" class="editable-input text-2xl font-black text-slate-800" placeholder="제목">
-                                <input type="text" value="${item.desc}" oninput="config['${type}'][${idx}].desc = this.value; saveToLocal(); showAutoSaveIndicator();" class="editable-input text-lg text-slate-500 font-bold mt-1" placeholder="내용">
+                                <textarea rows="1" oninput="config['${type}'][${idx}].title = this.value; this.style.height='auto'; this.style.height=(this.scrollHeight)+'px'; saveToLocal(); showAutoSaveIndicator();" class="editable-input text-5xl font-black text-slate-800 break-words w-full" placeholder="제목" style="height: auto; min-height: 1lh; field-sizing: content;">${item.title}</textarea>
+                                <input type="text" value="${item.desc}" oninput="config['${type}'][${idx}].desc = this.value; saveToLocal(); showAutoSaveIndicator();" class="editable-input text-base text-slate-500 font-bold mt-0.5" placeholder="내용">
                             </div>
-                            <button onclick="config['${type}'].splice(${idx}, 1); renderContent(); saveToLocal(); showAutoSaveIndicator();" class="p-2 text-red-400 opacity-0 group-hover:opacity-100 transition-all"><i data-lucide="trash-2"></i></button>
+                            <button onclick="config['${type}'].splice(${idx}, 1); renderContent(); saveToLocal(); showAutoSaveIndicator();" class="p-2 text-red-400 opacity-0 group-hover:opacity-100 transition-all mt-2"><i data-lucide="trash-2"></i></button>
                         </div>`;
                 });
+
                 html += `<button onclick="config['${type}'].push({title:'', desc:''}); renderContent(); saveToLocal(); showAutoSaveIndicator();" class="w-full py-5 border-4 border-dashed border-white/40 rounded-[2rem] text-white/60 font-black hover:bg-white/20 transition-all flex items-center justify-center gap-2">+ 추가하기</button></div>`;
                 container.innerHTML = html;
             }
@@ -538,5 +551,6 @@
 
         window.onload = init;
     </script>
-</body>
-</html>
+
+
+</body></html>
